@@ -1,6 +1,17 @@
+Here Implemented Python + Django + Stripe API backend and frontend (BS5) with the following functionality:
 
+- Django Item Model with fields (name, description, price), available for editing and adding in the site admin panel;
+- Django Model API, for adding an ItemAPI obtained from the Dashboard Stripe and associated with the Item model with the OneToOneField primary key
 
+On the main page, all services received from the Item model are displayed with the ability to go to a purchase or product information:
+ - when you select the "buy" button - GET goes to /buy/{id} and goes to the Stripe payment page
+ - when you select the "information" button - GET /item/{id}, with the output of all information from the Item model and the ability to "buy"
 
+To start the server, you need to enter the service_site folder and type in the terminal - python manage.py runserver
+
+All used libraries are listed in "requirements.txt"
+
+________________________________________________________________________________________________________________________________________________
 
 
 Здесь Реализована работа Python + Django + Stripe API бэкенда и фронтэнда (BS5) со следующим функционалом:
